@@ -1,4 +1,4 @@
-- Lists all genres from the database hbtn_0d_tvshows along with the number of
+-- Lists all genres from the database hbtn_0d_tvshows along with the number of
 -- shows linked to each.
 -- Does not display genres without linked shows.
 -- Records are ordered by descending number of shows linked.
@@ -9,4 +9,4 @@ SELECT g.`name` AS `genre`,
        ON g.`id` = t.`genre_id`
  GROUP BY g.`name`
  ORDER BY `number_of_shows` DESC;
- 
+  
